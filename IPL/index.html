@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chennai Super Kings - Official Fan Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="https://logos-world.net/wp-content/uploads/2020/06/Chennai-Super-Kings-Logo.png" alt="Chennai Super Kings">
+                <span>Chennai Super Kings</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#matches">Matches</a></li>
+                <li><a href="#stats">Stats</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#fan-zone">Fan Zone</a></li>
+                <li><a href="forum.html">Forum</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Chennai Super Kings</h1>
+            <p class="hero-subtitle">5-Time IPL Champions</p>
+            <p class="hero-description">Whistle Podu! Experience the legacy of the most beloved IPL franchise</p>
+            <div class="hero-buttons">
+                <button class="btn-primary">Latest News</button>
+                <button class="btn-secondary">Match Schedule</button>
+            </div>
+        </div>
+        <div class="hero-stats">
+            <div class="stat-item">
+                <h3>5</h3>
+                <p>IPL Titles</p>
+            </div>
+            <div class="stat-item">
+                <h3>2</h3>
+                <p>Champions League</p>
+            </div>
+            <div class="stat-item">
+                <h3>2008</h3>
+                <p>Founded</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="team" class="team-section">
+        <div class="container">
+            <h2>Squad 2024</h2>
+            <div class="team-grid" id="teamGrid">
+                <!-- Players will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <section id="matches" class="matches-section">
+        <div class="container">
+            <h2>Match Schedule</h2>
+            <div class="match-tabs">
+                <button class="tab-btn active" data-tab="upcoming">Upcoming</button>
+                <button class="tab-btn" data-tab="completed">Completed</button>
+            </div>
+            <div class="matches-container" id="matchesContainer">
+                <!-- Matches will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <section id="stats" class="stats-section">
+        <div class="container">
+            <h2>Team Statistics</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>Tournament Record</h3>
+                    <div class="stat-details">
+                        <div class="stat-row">
+                            <span>Matches Played</span>
+                            <span>240</span>
+                        </div>
+                        <div class="stat-row">
+                            <span>Matches Won</span>
+                            <span>136</span>
+                        </div>
+                        <div class="stat-row">
+                            <span>Win Percentage</span>
+                            <span>56.7%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <h3>Batting Records</h3>
+                    <div class="stat-details">
+                        <div class="stat-row">
+                            <span>Highest Total</span>
+                            <span>246/5</span>
+                        </div>
+                        <div class="stat-row">
+                            <span>Highest Individual</span>
+                            <span>116 (McCullum)</span>
+                        </div>
+                        <div class="stat-row">
+                            <span>Most Sixes</span>
+                            <span>1,156</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <h3>Bowling Records</h3>
+                    <div class="stat-details">
+                        <div class="stat-row">
+                            <span>Best Bowling</span>
+                            <span>5/16 (Chahar)</span>
+                        </div>
+                        <div class="stat-row">
+                            <span>Most Wickets</span>
+                            <span>156 (Bravo)</span>
+                        </div>
+                        <div class="stat-row">
+                            <span>Best Economy</span>
+                            <span>6.18</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="news" class="news-section">
+        <div class="container">
+            <h2>Latest News</h2>
+            <div class="news-grid" id="newsGrid">
+                <!-- News will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <section id="fan-zone" class="fan-zone">
+        <div class="container">
+            <h2>Fan Zone</h2>
+            <div class="fan-features">
+                <div class="fan-card">
+                    <h3>Fan Poll</h3>
+                    <p>Who should be CSK's captain for next season?</p>
+                    <div class="poll-options">
+                        <button class="poll-btn">MS Dhoni</button>
+                        <button class="poll-btn">Ruturaj Gaikwad</button>
+                        <button class="poll-btn">Ravindra Jadeja</button>
+                    </div>
+                </div>
+                <div class="fan-card">
+                    <h3>Fan Gallery</h3>
+                    <p>Share your CSK moments</p>
+                    <button class="btn-primary">Upload Photo</button>
+                </div>
+                <div class="fan-card">
+                    <h3>Match Predictions</h3>
+                    <p>Predict the next match result</p>
+                    <button class="btn-primary">Make Prediction</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Chennai Super Kings</h4>
+                    <p>Whistle Podu! The most beloved franchise in IPL history</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#team">Team</a></li>
+                        <li><a href="#matches">Matches</a></li>
+                        <li><a href="#stats">Statistics</a></li>
+                        <li><a href="#news">News</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#">Twitter</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">Facebook</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Chennai Super Kings Fan Hub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>"<!-- trigger build -->" 
