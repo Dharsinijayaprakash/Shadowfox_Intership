@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSK Fan Forum - Chennai Super Kings</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        .forum-container {
+            max-width: 1000px;
+            margin: 100px auto 50px;
+            padding: 0 20px;
+        }
+        .forum-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .forum-header h1 {
+            color: #1e3a8a;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        .forum-categories {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        .category-card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 5px 20px rgba(255, 204, 0, 0.1);
+            border-left: 5px solid #ffcc00;
+        }
+        .category-title {
+            color: #1e3a8a;
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        .category-desc {
+            color: #666;
+            margin-bottom: 15px;
+        }
+        .category-stats {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.9rem;
+            color: #999;
+        }
+        .recent-posts {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 5px 20px rgba(255, 204, 0, 0.1);
+        }
+        .post-item {
+            padding: 15px 0;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .post-item:last-child {
+            border-bottom: none;
+        }
+        .post-title {
+            color: #1e3a8a;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        .post-meta {
+            font-size: 0.9rem;
+            color: #666;
+        }
+        .post-replies {
+            background: #ffcc00;
+            color: #1e3a8a;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="https://logos-world.net/wp-content/uploads/2020/06/Chennai-Super-Kings-Logo.png" alt="Chennai Super Kings">
+                <span>Chennai Super Kings</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#team">Team</a></li>
+                <li><a href="index.html#matches">Matches</a></li>
+                <li><a href="index.html#stats">Stats</a></li>
+                <li><a href="index.html#news">News</a></li>
+                <li><a href="index.html#fan-zone">Fan Zone</a></li>
+                <li><a href="forum.html" class="active">Forum</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="forum-container">
+        <div class="forum-header">
+            <h1>🦁 CSK Fan Forum 🦁</h1>
+            <p>Whistle Podu! Connect with fellow CSK fans from around the world</p>
+        </div>
+
+        <div class="forum-categories">
+            <div class="category-card">
+                <div class="category-title">🏏 Match Discussions</div>
+                <div class="category-desc">Discuss upcoming matches, strategies, and post-match analysis</div>
+                <div class="category-stats">
+                    <span>1,234 Topics</span>
+                    <span>15,678 Posts</span>
+                </div>
+            </div>
+            
+            <div class="category-card">
+                <div class="category-title">👥 Player Talk</div>
+                <div class="category-desc">Everything about CSK players - stats, performances, and updates</div>
+                <div class="category-stats">
+                    <span>856 Topics</span>
+                    <span>12,345 Posts</span>
+                </div>
+            </div>
+            
+            <div class="category-card">
+                <div class="category-title">📈 Team Analysis</div>
+                <div class="category-desc">Deep dive into team performance, tactics, and future prospects</div>
+                <div class="category-stats">
+                    <span>432 Topics</span>
+                    <span>8,901 Posts</span>
+                </div>
+            </div>
+            
+            <div class="category-card">
+                <div class="category-title">🎉 Fan Zone</div>
+                <div class="category-desc">Share your CSK moments, photos, and connect with other fans</div>
+                <div class="category-stats">
+                    <span>2,156 Topics</span>
+                    <span>25,789 Posts</span>
+                </div>
+            </div>
+            
+            <div class="category-card">
+                <div class="category-title">📰 News & Updates</div>
+                <div class="category-desc">Latest CSK news, transfers, and official announcements</div>
+                <div class="category-stats">
+                    <span>678 Topics</span>
+                    <span>9,876 Posts</span>
+                </div>
+            </div>
+            
+            <div class="category-card">
+                <div class="category-title">🏆 History & Legacy</div>
+                <div class="category-desc">Celebrate CSK's glorious past and memorable moments</div>
+                <div class="category-stats">
+                    <span>345 Topics</span>
+                    <span>6,543 Posts</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="recent-posts">
+            <h2 style="color: #1e3a8a; margin-bottom: 20px;">🔥 Recent Discussions</h2>
+            
+            <div class="post-item">
+                <div>
+                    <div class="post-title">Dhoni's captaincy in IPL 2024 - What to expect?</div>
+                    <div class="post-meta">By CSKFan2008 • 2 hours ago</div>
+                </div>
+                <div class="post-replies">23 replies</div>
+            </div>
+            
+            <div class="post-item">
+                <div>
+                    <div class="post-title">Ruturaj Gaikwad - Future captain material?</div>
+                    <div class="post-meta">By WhistlePodu • 4 hours ago</div>
+                </div>
+                <div class="post-replies">45 replies</div>
+            </div>
+            
+            <div class="post-item">
+                <div>
+                    <div class="post-title">CSK vs MI - Classic rivalry analysis</div>
+                    <div class="post-meta">By ChennaiLion • 6 hours ago</div>
+                </div>
+                <div class="post-replies">67 replies</div>
+            </div>
+            
+            <div class="post-item">
+                <div>
+                    <div class="post-title">Best CSK moments from 2023 season</div>
+                    <div class="post-meta">By YellowArmy • 8 hours ago</div>
+                </div>
+                <div class="post-replies">89 replies</div>
+            </div>
+            
+            <div class="post-item">
+                <div>
+                    <div class="post-title">Pathirana's bowling action - Unique and effective</div>
+                    <div class="post-meta">By CricketAnalyst • 12 hours ago</div>
+                </div>
+                <div class="post-replies">34 replies</div>
+            </div>
+            
+            <div class="post-item">
+                <div>
+                    <div class="post-title">Chepauk atmosphere - Nothing beats home advantage</div>
+                    <div class="post-meta">By ChennaiPride • 1 day ago</div>
+                </div>
+                <div class="post-replies">156 replies</div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Chennai Super Kings</h4>
+                    <p>Whistle Podu! The most beloved franchise in IPL history</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html#team">Team</a></li>
+                        <li><a href="index.html#matches">Matches</a></li>
+                        <li><a href="index.html#stats">Statistics</a></li>
+                        <li><a href="index.html#news">News</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#">Twitter</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">Facebook</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Chennai Super Kings Fan Hub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
